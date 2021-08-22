@@ -36,6 +36,7 @@ public class CovidNewEditor implements ISubscriber {
         for (IObserver iObserver : listObserver) {
             if (iObserver == observer) {
                 iObserver.updateNumberCovid(numberCovid);
+                break;
             }
         }
     }
