@@ -51,6 +51,18 @@ public class Main {
         return 0;
     }
 
+    static boolean reachNextLevel(int experience, int threshold, int reward) {
+        boolean isNextLevel = false;
+        if (checkValidNumber(experience, 3, 250)
+                && checkValidNumber(threshold, 5, 300)
+                && checkValidNumber(reward, 2, 65)
+        ) {
+
+        }
+
+        return isNextLevel;
+    }
+
 
     static boolean checkValidNumber(int n, int min, int max) {
         return (min <= n && n <= max);
